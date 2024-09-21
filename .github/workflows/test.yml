@@ -1,0 +1,11 @@
+name: "hola mundo github actions"
+
+on: [push] #evento
+
+jobs: 
+  hola:
+    runs-on: ubuntu-latest #dice en que servidor vamos a correr el job
+
+    steps:
+    - name: Hola mundo
+      run: echo "HOla mundo"
