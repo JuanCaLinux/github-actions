@@ -9,3 +9,10 @@ jobs:
     steps:
     - name: Hola mundo
       run: echo "Hola mundo"
+
+  other:
+    runs-on: ubuntu-latest #dice en que servidor vamos a correr el job
+
+    steps:
+    - name: ls
+      run: ls -al
