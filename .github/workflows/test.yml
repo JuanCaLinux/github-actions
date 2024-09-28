@@ -10,6 +10,15 @@ jobs:
     - name: Hola mundo
       run: echo "Hola mundo"
 
+    - name: touch file
+      run: touch hola.txt
+
+    - name: set text
+      run: echo "Hola step" >> hola.txt
+
+    - name: read file
+      run: cat hola.txt
+
   other:
     runs-on: ubuntu-latest #dice en que servidor vamos a correr el job
 
