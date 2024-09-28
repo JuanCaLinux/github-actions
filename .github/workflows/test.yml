@@ -21,7 +21,7 @@ jobs:
 
   other:
     runs-on: ubuntu-latest #dice en que servidor vamos a correr el job
-
+    needs: [hola] #aqui le dices los jobs que deben ejecutarse primero para que se pueda ejecutar este
     steps:
     - name: ls
       run: ls -al
