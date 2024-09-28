@@ -1,6 +1,17 @@
 name: "hola mundo github actions"
 
-on: [push] #evento
+#on: [push] #evento
+
+#cuando quieres que se ejecute el workflow en ramas especificas
+on: 
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
 
 jobs: 
   hola:
@@ -22,6 +33,11 @@ jobs:
   other:
     runs-on: ubuntu-latest #dice en que servidor vamos a correr el job
     needs: [hola] #aqui le dices los jobs que deben ejecutarse primero para que se pueda ejecutar este
+    
     steps:
+    #actions es un bloque de codigo reutilizable
+    - name: Checkout
+      uses: actions/checkout@v4.2.0
+            
     - name: ls
       run: ls -al
