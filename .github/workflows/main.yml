@@ -9,7 +9,7 @@ jobs:
     steps:
         #este action especifico es para salir del archivo y ubicarnos en la carpeta de todo el repositorio
       - name: Checkout
-      uses: actions/checkout@v4.2.0
+        uses: actions/checkout@v4.2.0
 
       - name: ls
         run: | #comando para scripts multilinea
