@@ -1,3 +1,3 @@
 sudo apt-get update
 
-sudo apt-get instal curl -y
+sudo apt-get install curl -y
