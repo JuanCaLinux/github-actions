@@ -11,6 +11,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.2.0
 
+      - name: a ver si esta script
+        run: ls 
+
       - name: ls
         run: | #comando para scripts multilinea
          chmod +x script.sh
