@@ -6,8 +6,8 @@ jobs:
   test-build:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: ls
-      run: |
-        echo "hola mundo" >> hola.txt
-        cat hola.txt
+    steps:
+      - name: ls
+        run: |
+          echo "hola mundo" >> hola.txt
+          cat hola.txt
