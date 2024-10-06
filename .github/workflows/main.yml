@@ -21,3 +21,5 @@ jobs:
 
       - name: my action
         uses: ./.github/Actions/My-action
+        with:
+          message: "juan"
