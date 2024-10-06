@@ -14,3 +14,6 @@ jobs:
                 ports:
                    - 3306:3306  
 
+        steps:
+            - name: a ver si esta script
+              run: ls 
