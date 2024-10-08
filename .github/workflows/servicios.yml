@@ -1,4 +1,4 @@
-name: "ejemplo de composite action"
+name: "ejemplo de composite action" #como se usan los servicios
 
 on: [push]
 
