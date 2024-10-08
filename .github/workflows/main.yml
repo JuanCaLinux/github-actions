@@ -6,6 +6,10 @@ jobs:
   test-build:
     runs-on: ubuntu-latest
 
+    #para configurar variables de entorno
+    env:
+      MY-VAR: "variable de entorno"
+
     steps:
         #este action especifico es para salir del archivo y ubicarnos en la carpeta de todo el repositorio
       - name: Checkout
@@ -23,3 +27,6 @@ jobs:
         uses: ./.github/Actions/My-action
         with:
           message: "juan"
+
+      - name: probarvariable
+        run: echo "hola mi variable $MY-VAR"
