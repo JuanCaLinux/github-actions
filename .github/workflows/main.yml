@@ -8,7 +8,7 @@ jobs:
 
     #para configurar variables de entorno
     env:
-      MY-VAR: variable
+      MY_VAR: variable
 
     steps:
         #este action especifico es para salir del archivo y ubicarnos en la carpeta de todo el repositorio
@@ -29,4 +29,4 @@ jobs:
           message: "juan"
 
       - name: probarvariable
-        run: echo "hola mi variable $MY-VAR"
+        run: echo "hola mi variable $MY_VAR"
