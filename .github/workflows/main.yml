@@ -8,7 +8,7 @@ jobs:
 
     #para configurar variables de entorno
     env:
-      MY-VAR: "variable de entorno"
+      MY-VAR: variable
 
     steps:
         #este action especifico es para salir del archivo y ubicarnos en la carpeta de todo el repositorio
