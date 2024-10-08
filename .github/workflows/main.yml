@@ -30,3 +30,6 @@ jobs:
 
       - name: probarvariable
         run: echo "hola mi variable $MY_VAR"
+
+      - name: probarvariablerepo
+        run: echo "hola mi variable ${{ vars.MY_VAR2 }}"
